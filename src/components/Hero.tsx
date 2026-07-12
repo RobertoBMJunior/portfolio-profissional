@@ -1,3 +1,16 @@
 export function Hero() {
-  return <section>HERO</section>
+  return (
+    <section>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      HERO
+    </section>
+  )
 }
