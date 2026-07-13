@@ -224,8 +224,8 @@ export function Hero() {
                 md:h-56
                 md:w-56
 
-                lg:h-[380px]
-                lg:w-[300px]
+                lg:h-95
+                lg:w-75
 
                 rounded-full
                 lg:rounded-[28px]
