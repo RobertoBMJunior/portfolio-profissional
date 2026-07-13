@@ -2,7 +2,7 @@ export function Header() {
   return (
     <header
       id="header"
-      className="fixed w-full top-0 left-0 flex justify-between items-center py-5.5 px-[8%] z-20 backdrop-blur-[18px] bg-white/72 border-b border-white/40 transition-all duration-400"
+      className="fixed w-full top-0 left-0 flex justify-between items-center py-5.5 px-[8%] z-20 backdrop-blur-[18px] bg-white/72 border-b border-white/40 transition-all duration-400 h-25"
     >
       <a href="#" className="text-2xl font-bold text-(--secondary)">
         {' '}

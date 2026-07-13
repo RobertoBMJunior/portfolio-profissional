@@ -4,6 +4,8 @@
   --primary: #2563eb;
   --primary-dark: #1d4ed8;
   --secondary: #0f172a;
+  --bg-fundo: #f8fafc;
+  --tertiary: #dbeafe;
 
   --white: #ffffff;
   --light: #f8fafc;
@@ -29,8 +31,23 @@
 }
 
 body {
-  background: var(--white);
+  background: var(--bg-fundo);
   /* font-family: Arial, Helvetica, sans-serif; */
   font-family: var(--font-sans);
   line-height: 1.7;
+}
+
+@keyframes floating {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-floating {
+  animation: floating 5s ease-in-out infinite;
 }
