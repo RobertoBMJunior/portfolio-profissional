@@ -41,7 +41,7 @@ export function Projects() {
 
         <p className="mx-auto mt-4 max-w-2xl text-lg leading-8 text-slate-500">
           Alguns dos projetos desenvolvidos recentemente para demonstrar a
-          qualidade, organization e atenção aos detalhes presentes in cada
+          qualidade, organização e atenção aos detalhes presentes em cada
           trabalho.
         </p>
       </div>
