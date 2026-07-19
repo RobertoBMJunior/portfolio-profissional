@@ -34,7 +34,7 @@ export function AboutMe() {
         <div className="space-y-5 text-lg leading-8 text-slate-600">
           <p>
             Sou desenvolvedor{' '}
-            <strong className="text-slate-900">Full Stack</strong> e formado em{' '}
+            <strong className="text-slate-900">Full Stack</strong>, formado em{' '}
             <strong className="text-slate-900">
               Engenharia Elétrica pela Universidade de Brasília (UnB)
             </strong>
