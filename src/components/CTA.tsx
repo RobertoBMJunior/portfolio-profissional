@@ -10,28 +10,30 @@ export function CTA() {
   const whatsappUrl = `https://wa.me/${telefone}?text=${mensagemInicial}`
 
   return (
-    <section className="relative overflow-hidden bg-slate-900 py-24">
-      {/* Glow */}
-      <div className="absolute -left-32 -top-32 h-80 w-80 rounded-full bg-blue-500/20 blur-3xl" />
-      <div className="absolute -bottom-32 -right-32 h-80 w-80 rounded-full bg-violet-600/20 blur-3xl" />
+    <section className="relative overflow-hidden bg-slate-50 py-12">
+      {/* Glow azul */}
+      <div className="absolute -left-32 -top-32 h-80 w-80 rounded-full bg-blue-300/30 blur-3xl" />
+
+      {/* Glow roxo */}
+      <div className="absolute -bottom-32 -right-32 h-80 w-80 rounded-full bg-violet-300/30 blur-3xl" />
 
       <div className="relative z-10 mx-auto max-w-5xl px-6">
         <div
           className="
             rounded-[36px]
             border
-            border-white/10
-            bg-white/5
+            border-slate-200
+            bg-white
             px-8
             py-14
             text-center
-            backdrop-blur-md
+            shadow-[0_25px_80px_rgba(15,23,42,0.08)]
 
             md:px-16
             md:py-16
           "
         >
-          <span className="text-sm font-semibold uppercase tracking-[0.25em] text-blue-300">
+          <span className="text-sm font-semibold uppercase tracking-[0.25em] text-blue-600">
             Vamos conversar?
           </span>
 
@@ -43,7 +45,7 @@ export function CTA() {
               text-2xl
               font-bold
               leading-tight
-              text-white
+              text-slate-900
 
               lg:text-5xl
             "
@@ -58,9 +60,10 @@ export function CTA() {
               mt-6
               max-w-2xl
               text-base
-              lg:text-lg
               leading-8
-              text-slate-300
+              text-slate-600
+
+              lg:text-lg
             "
           >
             Se você deseja um site moderno, rápido e profissional para sua
@@ -78,31 +81,35 @@ export function CTA() {
               items-center
               justify-center
               gap-3
+
               rounded-2xl
 
-              bg-green-500
+              bg-emerald-600
               px-8
               py-4
 
-              lg:text-lg
               font-semibold
               text-white
 
-              shadow-xl
+              shadow-lg
+              shadow-emerald-600/20
 
               transition-all
               duration-300
 
               hover:-translate-y-1
-              hover:bg-green-600
-              hover:shadow-green-500/30
+              hover:bg-emerald-700
+              hover:shadow-xl
+              hover:shadow-emerald-600/30
+
+              lg:text-lg
             "
           >
             <WhatsappLogoIcon size={28} weight="fill" />
             Solicitar orçamento
           </a>
 
-          <p className="mt-6 text-sm text-slate-400">
+          <p className="mt-6 text-sm text-slate-500">
             ✓ Resposta rápida &nbsp;&nbsp;•&nbsp;&nbsp; ✓ Orçamento sem
             compromisso &nbsp;&nbsp;•&nbsp;&nbsp; ✓ Atendimento personalizado
           </p>

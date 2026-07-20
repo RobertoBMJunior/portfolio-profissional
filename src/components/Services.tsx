@@ -29,30 +29,31 @@ export function Services() {
   ]
 
   return (
-    <section id="services" className="mx-auto max-w-7xl px-6 py-24">
-      <div className="mb-14 text-center">
-        <span className="font-semibold uppercase tracking-[0.2em] text-blue-600">
-          Serviços
-        </span>
+    <section id="services" className=" px-6 py-10 bg-white">
+      <div className="mx-auto max-w-7xl">
+        <div className="mb-10 text-center">
+          <span className="font-semibold uppercase tracking-[0.2em] text-blue-600">
+            Serviços
+          </span>
 
-        <h2 className="mt-3 text-3xl font-bold text-slate-900 lg:text-4xl">
-          Soluções para fortalecer a presença digital da sua empresa
-        </h2>
+          <h2 className="mt-3 text-3xl font-bold text-slate-900 lg:text-4xl">
+            Soluções para fortalecer a presença digital da sua empresa
+          </h2>
 
-        <p className="mx-auto mt-4 max-w-2xl text-lg leading-8 text-slate-500">
-          Desenvolvo sites modernos, rápidos e personalizados para ajudar sua
-          empresa a transmitir mais credibilidade e conquistar novos clientes.
-        </p>
-      </div>
+          <p className="mx-auto mt-4 max-w-2xl text-lg leading-8 text-slate-500">
+            Desenvolvo sites modernos, rápidos e personalizados para ajudar sua
+            empresa a transmitir mais credibilidade e conquistar novos clientes.
+          </p>
+        </div>
 
-      <div className="grid gap-8 md:grid-cols-2">
-        {services.map((service) => {
-          const Icon = service.icon
+        <div className="grid gap-8 md:grid-cols-2">
+          {services.map((service) => {
+            const Icon = service.icon
 
-          return (
-            <article
-              key={service.title}
-              className="
+            return (
+              <article
+                key={service.title}
+                className="
                 group
                 rounded-[28px]
                 border
@@ -65,10 +66,10 @@ export function Services() {
                 hover:border-blue-300
                 hover:shadow-2xl
               "
-            >
-              <div className="mb-6 flex items-center gap-5">
-                <div
-                  className="
+              >
+                <div className="mb-6 flex items-center gap-5">
+                  <div
+                    className="
                     flex
                     h-14
                     w-14
@@ -87,19 +88,22 @@ export function Services() {
                     group-hover:bg-violet-700
                     group-hover:text-white
                   "
-                >
-                  <Icon size={28} strokeWidth={2.2} />
+                  >
+                    <Icon size={28} strokeWidth={2.2} />
+                  </div>
+
+                  <h3 className="text-2xl font-bold leading-tight text-slate-900">
+                    {service.title}
+                  </h3>
                 </div>
 
-                <h3 className="text-2xl font-bold leading-tight text-slate-900">
-                  {service.title}
-                </h3>
-              </div>
-
-              <p className="leading-7 text-slate-600">{service.description}</p>
-            </article>
-          )
-        })}
+                <p className="leading-7 text-slate-600">
+                  {service.description}
+                </p>
+              </article>
+            )
+          })}
+        </div>
       </div>
     </section>
   )
