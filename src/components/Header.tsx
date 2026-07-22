@@ -1,80 +1,254 @@
+'use client'
+
+import { useState } from 'react'
+import { List, X } from '@phosphor-icons/react'
+
 export function Header() {
+  const [menuOpen, setMenuOpen] = useState(false)
+
+  function closeMenu() {
+    setMenuOpen(false)
+  }
+
   return (
-    <header
-      id="header"
-      className="fixed w-full top-0 left-0 flex justify-between items-center py-5.5 px-[8%] z-20 backdrop-blur-[18px] bg-white/72 border-b border-white/40 transition-all duration-400 h-25"
-    >
-      <a href="#" className="text-2xl font-bold text-(--secondary)">
-        {' '}
-        Roberto Júnior{' '}
-      </a>
+    <>
+      <header
+        id="header"
+        className="
+          fixed
+          inset-x-0
+          top-0
+          z-50
+          h-25
+          border-b
+          border-white/40
+          bg-white/72
+          backdrop-blur-[18px]
+        "
+      >
+        <div
+          className="
+            mx-auto
+            flex
+            h-full
+            max-w-7xl
+            items-center
+            justify-between
+            px-6
+          "
+        >
+          {/* Logo */}
 
-      <nav className="flex items-center">
-        <span id="icon-menu" className="text-[2rem] cursor-pointer hidden">
-          {' '}
-          &#9776;{' '}
-        </span>
+          <a
+            href="#"
+            className="text-2xl font-bold text-(--secondary)"
+            onClick={closeMenu}
+          >
+            Roberto Júnior
+          </a>
 
-        <ul id="menu" className="flex gap-10">
+          {/* Menu Desktop */}
+
+          <nav className="hidden lg:block">
+            <ul className="flex gap-10">
+              {[
+                ['Projetos', '#projects'],
+                ['Serviços', '#services'],
+                ['Tecnologias', '#technologies'],
+                ['Contato', '#contacts'],
+              ].map(([label, href]) => (
+                <li key={label}>
+                  <a
+                    href={href}
+                    className="
+                      relative
+                      font-medium
+                      text-(--gray-700)
+                      transition-all
+                      duration-300
+                      hover:text-(--primary)
+                      after:content-['']
+                      after:absolute
+                      after:left-0
+                      after:-bottom-2
+                      after:h-0.5
+                      after:w-0
+                      after:bg-(--primary)
+                      after:transition-all
+                      after:duration-300
+
+                      hover:after:w-full
+                    "
+                  >
+                    {label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+
+          {/* Botão Desktop */}
+
+          <a
+            href="https://wa.me/5561999743703"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="
+              hidden
+              lg:flex
+              items-center
+              justify-center
+              rounded-full
+              bg-(--primary)
+              px-6.5
+              py-3.5
+              font-medium
+              text-white
+              transition-all
+              duration-300
+              hover:bg-(--primary-dark)
+            "
+          >
+            Solicitar orçamento
+          </a>
+
+          {/* Botão Mobile */}
+
+          <button
+            onClick={() => setMenuOpen(!menuOpen)}
+            className="
+              rounded-lg
+              p-2
+              transition-colors
+              duration-300
+              hover:bg-slate-100
+              lg:hidden
+            "
+            aria-label="Abrir menu"
+          >
+            {menuOpen ? (
+              <X size={30} weight="bold" />
+            ) : (
+              <List size={30} weight="bold" />
+            )}
+          </button>
+        </div>
+      </header>
+
+      {/* Backdrop */}
+
+      <div
+        onClick={closeMenu}
+        className={`
+          fixed
+          inset-0
+          z-40
+          bg-black/25
+          transition-all
+          duration-300
+          lg:hidden
+
+          ${
+            menuOpen
+              ? 'visible opacity-100'
+              : 'pointer-events-none invisible opacity-0'
+          }
+        `}
+      />
+
+      {/* Menu Mobile */}
+
+      <nav
+        className={`
+          fixed
+          top-25
+          left-0
+          right-0
+          z-50
+          border-b
+          border-slate-200
+          bg-white
+          shadow-xl
+
+          origin-top
+          transition-all
+          duration-300
+
+          lg:hidden
+
+          ${
+            menuOpen
+              ? 'translate-y-0 opacity-100'
+              : '-translate-y-6 pointer-events-none opacity-0'
+          }
+        `}
+      >
+        <ul className="flex flex-col">
           <li>
             <a
               href="#projects"
-              className="relative text-(--gray-700) hover:text-(--primary) font-medium transition-all duration-300 after:content-[''] after:absolute after:left-0 after:-bottom-2 after:w-0 after:h-0.5 after:bg-(--primary) after:transition-all after:duration-300 hover:after:w-full"
+              onClick={closeMenu}
+              className="block border-b border-slate-100 px-6 py-5 font-medium hover:bg-slate-50"
             >
-              {' '}
-              Projetos{' '}
+              Projetos
             </a>
           </li>
 
           <li>
             <a
               href="#services"
-              className="relative text-(--gray-700) hover:text-(--primary) font-medium transition-all duration-300 after:content-[''] after:absolute after:left-0 after:-bottom-2 after:w-0 after:h-0.5 after:bg-(--primary) after:transition-all after:duration-300 hover:after:w-full"
+              onClick={closeMenu}
+              className="block border-b border-slate-100 px-6 py-5 font-medium hover:bg-slate-50"
             >
-              {' '}
-              Serviços{' '}
+              Serviços
             </a>
           </li>
 
           <li>
             <a
-              href="#experience"
-              className="relative text-(--gray-700) hover:text-(--primary) font-medium transition-all duration-300 after:content-[''] after:absolute after:left-0 after:-bottom-2 after:w-0 after:h-0.5 after:bg-(--primary) after:transition-all after:duration-300 hover:after:w-full"
+              href="#technologies"
+              onClick={closeMenu}
+              className="block border-b border-slate-100 px-6 py-5 font-medium hover:bg-slate-50"
             >
-              {' '}
-              Experiência{' '}
-            </a>
-          </li>
-
-          <li>
-            <a
-              href="#ability"
-              className="relative text-(--gray-700) hover:text-(--primary) font-medium transition-all duration-300 after:content-[''] after:absolute after:left-0 after:-bottom-2 after:w-0 after:h-0.5 after:bg-(--primary) after:transition-all after:duration-300 hover:after:w-full"
-            >
-              {' '}
-              Tecnologias{' '}
+              Tecnologias
             </a>
           </li>
 
           <li>
             <a
               href="#contacts"
-              className="relative text-(--gray-700) hover:text-(--primary) font-medium transition-all duration-300 after:content-[''] after:absolute after:left-0 after:-bottom-2 after:w-0 after:h-0.5 after:bg-(--primary) after:transition-all after:duration-300 hover:after:w-full"
+              onClick={closeMenu}
+              className="block border-b border-slate-100 px-6 py-5 font-medium hover:bg-slate-50"
             >
-              {' '}
-              Contato{' '}
+              Contato
+            </a>
+          </li>
+
+          <li className="p-6">
+            <a
+              href="https://wa.me/5561999743703"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={closeMenu}
+              className="
+                flex
+                justify-center
+                rounded-full
+                bg-(--primary)
+                px-6
+                py-4
+                font-semibold
+                text-white
+                transition-all
+                duration-300
+                hover:bg-(--primary-dark)
+              "
+            >
+              Solicitar orçamento
             </a>
           </li>
         </ul>
       </nav>
-
-      <a
-        href="https://wa.me/5561999743703"
-        target="_blank"
-        className="flex items-center justify-center cursor-pointer font-medium bg-(--primary) hover:bg-(--primary-dark) text-white px-6.5 py-3.25 rounded-full transition-all duration-300 ease-in-out"
-      >
-        Solicitar orçamento
-      </a>
-    </header>
+    </>
   )
 }

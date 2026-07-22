@@ -29,7 +29,7 @@ export function Services() {
   ]
 
   return (
-    <section id="services" className=" px-6 py-10 bg-white">
+    <section id="services" className="scroll-mt-25 px-6 py-10 bg-white">
       <div className="mx-auto max-w-7xl">
         <div className="mb-10 text-center">
           <span className="font-semibold uppercase tracking-[0.2em] text-blue-600">

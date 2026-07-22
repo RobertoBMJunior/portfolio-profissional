@@ -10,7 +10,10 @@ export function CTA() {
   const whatsappUrl = `https://wa.me/${telefone}?text=${mensagemInicial}`
 
   return (
-    <section className="relative overflow-hidden bg-slate-50 py-12">
+    <section
+      id="contacts"
+      className="scroll-mt-25 relative overflow-hidden bg-slate-50 py-12"
+    >
       {/* Glow azul */}
       <div className="absolute -left-32 -top-32 h-80 w-80 rounded-full bg-blue-300/30 blur-3xl" />
 
