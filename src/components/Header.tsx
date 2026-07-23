@@ -115,7 +115,7 @@ export function Header() {
               hover:bg-(--primary-dark)
             "
           >
-            Solicitar orçamento
+            Vamos conversar
           </a>
 
           {/* Botão Mobile */}
@@ -250,7 +250,7 @@ export function Header() {
                 hover:bg-(--primary-dark)
               "
             >
-              Solicitar orçamento
+              Vamos conversar
             </a>
           </li>
         </ul>

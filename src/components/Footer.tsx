@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import {
+  EnvelopeIcon,
   GithubLogoIcon,
   LinkedinLogoIcon,
   WhatsappLogoIcon,
@@ -25,28 +26,34 @@ export function Footer() {
         </div>
 
         {/* Direita */}
-        <div className="flex items-center justify-center gap-4">
+        <div className="flex flex-col items-center justify-center gap-1">
           <Link
             href={whatsappUrl}
             target="_blank"
-            className="rounded-full p-2 text-slate-400 transition-colors hover:text-green-400"
+            className="rounded-full p-2 text-slate-400 transition-colors hover:text-green-400 flex gap-2 flex-col items-center md:flex-row md:items-start"
           >
             <WhatsappLogoIcon size={28} weight="fill" />
+            <span>Celular/WhatsApp: (61) 99974-3703</span>
           </Link>
-          <Link
-            href="https://github.com/SEU_GITHUB"
+
+          <div className="rounded-full p-2 text-slate-400 transition-colors hover:text-green-400 flex gap-2 flex-col items-center md:flex-row md:items-start">
+            <EnvelopeIcon size={28} weight="fill" />{' '}
+            <span>Email: robertojuniorazul@gmail.com</span>
+          </div>
+          {/* <Link
+            href="https://github.com/RobertoBMJunior"
             target="_blank"
             className="rounded-full p-2 text-slate-400 transition-colors hover:text-white"
           >
             <GithubLogoIcon size={28} weight="fill" />
           </Link>
           <Link
-            href="https://linkedin.com/in/SEU_LINKEDIN"
+            href="https://www.linkedin.com/in/roberto-j%C3%BAnior-944551184/"
             target="_blank"
             className="rounded-full p-2 text-slate-400 transition-colors hover:text-blue-400"
           >
             <LinkedinLogoIcon size={28} weight="fill" />
-          </Link>
+          </Link> */}
         </div>
       </div>
 

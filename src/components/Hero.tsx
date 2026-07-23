@@ -160,7 +160,7 @@ export function Hero() {
                 hover:shadow-xl
               "
             >
-              Solicitar orçamento
+              Fale comigo
             </a>
 
             <a
