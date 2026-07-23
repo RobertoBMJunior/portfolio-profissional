@@ -1,6 +1,12 @@
 import Image from 'next/image'
 
 export function Hero() {
+  const telefone = '5561999743703'
+  const mensagem = encodeURIComponent(
+    'Olá! Fiquei interessado nos seus serviços, vamos conversar?'
+  )
+  const whatsappUrl = `https://wa.me/${telefone}?text=${mensagem}`
+
   return (
     <section
       id="hero"
@@ -133,7 +139,7 @@ export function Hero() {
 
           <div className="flex flex-wrap gap-5 justify-center lg:justify-start">
             <a
-              href="https://wa.me/5561999743703"
+              href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="

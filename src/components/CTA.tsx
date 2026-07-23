@@ -4,7 +4,7 @@ export function CTA() {
   const telefone = '5561999743703'
 
   const mensagemInicial = encodeURIComponent(
-    'Olá! Vi seu portfólio e gostaria de solicitar um orçamento para um site.'
+    'Olá! Fiquei interessado nos seus serviços, vamos conversar?'
   )
 
   const whatsappUrl = `https://wa.me/${telefone}?text=${mensagemInicial}`

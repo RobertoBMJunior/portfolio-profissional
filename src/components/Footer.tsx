@@ -8,7 +8,7 @@ import {
 export function Footer() {
   const telefone = '5561999743703'
   const mensagem = encodeURIComponent(
-    'Olá! Vi seu portfólio e gostaria de solicitar um orçamento para um site.'
+    'Olá! Fiquei interessado nos seus serviços, vamos conversar?'
   )
   const whatsappUrl = `https://wa.me/${telefone}?text=${mensagem}`
 

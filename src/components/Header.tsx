@@ -10,6 +10,12 @@ export function Header() {
     setMenuOpen(false)
   }
 
+  const telefone = '5561999743703'
+  const mensagem = encodeURIComponent(
+    'Olá! Fiquei interessado nos seus serviços, vamos conversar?'
+  )
+  const whatsappUrl = `https://wa.me/${telefone}?text=${mensagem}`
+
   return (
     <>
       <header
@@ -90,7 +96,7 @@ export function Header() {
           {/* Botão Desktop */}
 
           <a
-            href="https://wa.me/5561999743703"
+            href={whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="
@@ -226,7 +232,7 @@ export function Header() {
 
           <li className="p-6">
             <a
-              href="https://wa.me/5561999743703"
+              href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
               onClick={closeMenu}
