@@ -215,7 +215,7 @@ export function Hero() {
             />
 
             <Image
-              src="/roberto.jpg"
+              src="/Roberto.jpg"
               alt="Roberto Júnior"
               width={380}
               height={500}

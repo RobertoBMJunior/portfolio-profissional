@@ -19,7 +19,7 @@ const projects = [
   },
   {
     title: 'Landing Page',
-    image: '/coffee-Delivery.png',
+    image: '/coffee-Delivery.PNG',
     href: 'https://coffee-delivery-ten-blond.vercel.app/',
     description:
       'Landing page criada para demonstrar interfaces modernas, navegação intuitiva e design focado na experiência do usuário.',

@@ -6,7 +6,7 @@ export function Technologies() {
     { name: 'React', image: '/reactjs.webp' },
     { name: 'Tailwind CSS', image: '/tailwind.png' },
     { name: 'TypeScript', image: '/typescript.png' },
-    { name: 'JavaScript', image: '/javascript.png' },
+    { name: 'JavaScript', image: '/Javascript.png' },
     { name: 'Node.js', image: '/node.png' },
     { name: 'HTML5', image: '/html.png' },
     { name: 'CSS3', image: '/css.png' },
