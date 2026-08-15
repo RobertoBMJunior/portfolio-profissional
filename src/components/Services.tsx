@@ -50,7 +50,7 @@ export function Services() {
     {
       title: 'Transmita confiança',
       description:
-        'Mostre a estrutura da clínica e apresente sua equipe de forma profissional.',
+        'Mostre a estrutura da empresa e apresente sua equipe de forma profissional.',
 
       color: {
         bg: 'bg-violet-100',
@@ -62,7 +62,7 @@ export function Services() {
       items: [
         {
           icon: Buildings,
-          text: 'Fotos da clínica',
+          text: 'Fotos da empresa',
         },
         {
           icon: UsersThree,
@@ -78,7 +78,7 @@ export function Services() {
     {
       title: 'Mostre sua autoridade',
       description:
-        'Destaque seus diferenciais e aumente a confiança dos pacientes.',
+        'Destaque seus diferenciais e converta visitantes em novos clientes.',
 
       color: {
         bg: 'bg-amber-100',
@@ -94,11 +94,11 @@ export function Services() {
         },
         {
           icon: Certificate,
-          text: 'Diferenciais da clínica',
+          text: 'Diferenciais do negócio',
         },
         {
           icon: Star,
-          text: 'Depoimentos de pacientes',
+          text: 'Depoimentos de clientes',
         },
       ],
     },
@@ -106,7 +106,7 @@ export function Services() {
     {
       title: 'Localização fácil',
       description:
-        'Ajude seus pacientes a encontrar sua clínica com apenas um clique.',
+        'Ajude seus clientes a encontrar seu negócio com apenas um clique.',
 
       color: {
         bg: 'bg-sky-100',
@@ -122,7 +122,7 @@ export function Services() {
         },
         {
           icon: Car,
-          text: 'Rotas até a clínica',
+          text: 'Rotas até o seu local',
         },
         {
           icon: Clock,
