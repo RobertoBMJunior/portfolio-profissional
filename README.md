@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Roberto Júnior — Desenvolvimento de Sites
 
-## Getting Started
+Desenvolvimento de **sites profissionais, modernos e responsivos** para clínicas, consultórios e pequenos negócios.
 
-First, run the development server:
+Meu objetivo é criar uma presença digital que transmita **credibilidade, profissionalismo e confiança**, além de facilitar o contato entre sua empresa e seus clientes.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## O que ofereço
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Sites institucionais personalizados
+- Landing pages
+- Design responsivo para celulares, tablets e computadores
+- Integração com WhatsApp
+- Integração com Google Maps
+- Seções de serviços e apresentação
+- Depoimentos de clientes
+- Galeria e carrossel de imagens
+- Otimização de performance
+- Estrutura preparada para SEO
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+E muito mais conforme a necessidade do cliente. Tudo pode ser acordado.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Conheça alguns dos meus projetos
 
-## Learn More
+### TreinoPronto
 
-To learn more about Next.js, take a look at the following resources:
+Plataforma web desenvolvida com foco em performance, responsividade e experiência do usuário.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+🔗 [Visitar site](https://treinopronto.com)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Site para Clínica
 
-## Deploy on Vercel
+Site desenvolvido para apresentar os serviços de uma clínica odontológica, transmitir credibilidade e facilitar o contato com novos pacientes.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+🔗 [Ver projeto](https://sites-profissionais-ashy.vercel.app/)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Landing Page
+
+Landing page desenvolvida com tecnologias modernas e foco na experiência do usuário.
+
+🔗 [Ver projeto](https://coffee-delivery-ten-blond.vercel.app/)
+
+## Entre em contato
+
+Gostou do meu trabalho ou está pensando em criar um site para sua empresa?
+
+Entre em contato comigo pelo WhatsApp para conversarmos sobre seu projeto e solicitar um orçamento.
+
+[Solicitar orçamento pelo WhatsApp](https://wa.me/5561999743703)
+
+
+## Contato
+
+- LinkedIn: https://www.linkedin.com/in/roberto-j%C3%BAnior-944551184/
+- GitHub: https://github.com/RobertoBMJunior
+- Email: robertojuniorazul@gmail.com
